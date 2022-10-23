@@ -1,18 +1,18 @@
 ﻿using System;
     
     public class areaQuadrado{
-    public static void Main(string[] args){
+    public static void Main(){
 
 
-          double comprimento, altura, area;
+          decimal comprimento, altura, area;
          Console.Write("Comprimento: ");
 
-         comprimento = Convert.ToDouble(Console.ReadLine());
+         comprimento = decimal.Parse(Console.ReadLine());
 
 
 
           Console.Write("Altura: ");
-          altura = Convert.ToDouble(Console.ReadLine());
+          altura = decimal.Parse(Console.ReadLine());
 
         area = comprimento * altura;
          Console.WriteLine("Área: " + area);
