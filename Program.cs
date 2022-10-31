@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+using System.Runtime.Intrinsics.X86;
 
 public class areaQuadrado {
     public static void Main()
@@ -17,29 +19,48 @@ public class areaQuadrado {
         Console.Write("Opção");
         string numExercicio = Console.ReadLine();
         Console.WriteLine("");
-        if(int.TryParse(numExercicio, out int numero))
-            { }
-        else
-        {
-            Console.WriteLine("Opção incorreta!Tente novamente");
-        }
-        Console.Read();
+
+
+        //---------------------------Clico IF para controlar a seleção dos exercicios-------------------------------------------------------------------------------**
+        //if (int.tryparse(numexercicio, out int numero))
+        //{ }
+        //else
+        //{
+        //    console.writeline("opção incorreta!tente novamente");
+        //}
+        //console.read();
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+        //---------Exercicio 1------------------------------------------------------------------------------------------------------------------------------------------------**
+
+        //decimal comprimento, altura, area;
+        // Console.Write("Comprimento: ");
+
+        // comprimento = decimal.Parse(Console.ReadLine());
+        //  Console.Write("Altura: ");
+        // altura = decimal.Parse(Console.ReadLine());
+        // area = comprimento * altura;
+        // Console.WriteLine("Área: " + area);
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------**
+
+        //----Exercicio 2-----------------------------------------------------------------------------------------------------------------------------------------------------**
+
+//2 – Uma empresa pretende criar um pequeno programa que deve receber do teclado os valores
+//correspondentes aos salários brutos dos seus funcionários e apresentar os respetivo recibo de pagamento
+//(discriminação apenas do salário líquido).
+
+//Tenha em atenção a informação seguinte(valores fictícios):
+//• Desconto para a Segurança Social(20 % do vencimento bruto);
+//• Desconto para o IRS, aplicando as diferentes taxas:
+
+//        -Se o vencimento bruto for inferior a 500€, há isenção;
+//        -Se o vencimento bruto for superior ou igual a 500€ e inferior a 1000€, a dedução será de 12 %;
+//        -Se o vencimento bruto for superior ou igual a 1000€ e inferior a 1500€, a dedução será 15 %;
+//        -Se o vencimento bruto for superior a 1500€, a dedução será 18 %.
 
 
 
-        decimal comprimento, altura, area;
-         Console.Write("Comprimento: ");
 
-         comprimento = decimal.Parse(Console.ReadLine());
-          Console.Write("Altura: ");
-         altura = decimal.Parse(Console.ReadLine());
-         area = comprimento * altura;
-         Console.WriteLine("Área: " + area);
-
-
-
-
-
-    }   
+    }
 
 }
