@@ -45,52 +45,60 @@ public class areaQuadrado {
 
         //----Exercicio 2-----------------------------------------------------------------------------------------------------------------------------------------------------**
 
-        //2 – Uma empresa pretende criar um pequeno programa que deve receber do teclado os valores
-        //correspondentes aos salários brutos dos seus funcionários e apresentar o respetivos recibos de pagamento (discriminação apenas do salário líquido).
-
-        //Tenha em atenção a informação seguinte(valores fictícios):
-        //• Desconto para a Segurança Social(20 % do vencimento bruto);
-        //• Desconto para o IRS, aplicando as diferentes taxas:
-
-        //        -Se o vencimento bruto for inferior a 500€, há isenção;
-        //        -Se o vencimento bruto for superior ou igual a 500€ e inferior a 1000€, a dedução será de 12 %;
-        //        -Se o vencimento bruto for superior ou igual a 1000€ e inferior a 1500€, a dedução será 15 %;      200  
-        //        -Se o vencimento bruto for superior a 1500€, a dedução será 18 %.
-
-
-        double salBruto, salLiquido, segSocial, irs;
-
-        Console.WriteLine(" Exercicio 2 ");
-        Console.Write("");
-        Console.WriteLine(" Introduza o Salário Bruto: ");
-
-        salBruto = double.Parse(Console.ReadLine());
-        segSocial = salBruto * 0.20;
-
-        if (salBruto < 500)
-        {
-            irs = 500;
-        }
-        else if (salBruto >= 500 && salBruto < 1000)
-        {
-            irs = 0.12;
-        }
-        else if (salBruto >= 1000 && salBruto < 1500)
-        {
-            irs = 0.15;
-        }
-        else
-        {
-            irs = 0.18;
-        }
-
-        salLiquido = (salBruto - segSocial) - (salBruto * irs);
-
-      Console.WriteLine("O Salário Líquido é de:" + salLiquido );
 
 
 
-        
+
+        //  double salBruto, salLiquido, segSocial, irs;
+
+        //  Console.WriteLine(" Exercicio 2 ");
+        //  Console.Write("");
+        //  Console.WriteLine(" Introduza o Salário Bruto: ");
+
+        //  salBruto = double.Parse(Console.ReadLine());
+        //  segSocial = salBruto * 0.20;
+
+        //  if (salBruto < 500)
+        //  {
+        //      irs = 500;
+        //  }
+        //  else if (salBruto >= 500 && salBruto < 1000)
+        //  {
+        //      irs = 0.12;
+        //  }
+        //  else if (salBruto >= 1000 && salBruto < 1500)
+        //  {
+
+        //      irs = 0.15;
+        //  }
+        //  else
+        //  {
+        //      irs = 0.18;
+        //  }
+
+
+        //  salLiquido = (salBruto - segSocial) - (salBruto * irs);
+
+        //Console.WriteLine("O Salário Líquido é de:" + salLiquido );
+
+        //----Exercicio 3-----------------------------------------------------------------------------------------------------------------------------------------------------**
+
+        //long num, fatorial = 1;
+
+        //Console.Write("Numero:");
+
+        //num = long.Parse(Console.ReadLine());
+
+        //while (num > 1)
+        //{
+        //    fatorial = fatorial * num;
+        //    num--;
+        //}
+        //Console.WriteLine("Fatorial: " + fatorial);
+
+
+        //----Exercicio 4-----------------------------------------------------------------------------------------------------------------------------------------------------**
+
 
 
 
